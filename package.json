@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/nicepersonality/porta_intro_express#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
     "express": "^4.17.1"
   }
 }
