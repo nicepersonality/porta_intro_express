@@ -1,0 +1,119 @@
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: darkslateblue;
+  color: lightsteelblue;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+main h2 {
+  margin: 1rem 0;
+  color: darkslateblue;
+}
+#addEmployeeForm {
+  text-align: right;
+}
+#addEmployeeForm h2 {
+  text-align: left;
+}
+#inputFields {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.inputField {
+  display: flex;
+  flex-direction: column-reverse;
+  width: calc(20% - 0.8rem);
+  min-width: 8rem;
+  text-align: left;
+}
+.inputField label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-left: 0.25rem;
+}
+.inputField input {
+  border: 1px solid darkslateblue;
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+#submitEmployee {
+  margin: 1rem 0;
+  width: calc(20% - 0.8rem);
+  min-width: 8rem;
+  font-size: 1.25rem;
+}
+button {
+  display: inline-block;
+  cursor: pointer;
+  background-color: lightsteelblue;
+  border: 1px solid darkslateblue;
+  border-radius: 0.25rem;
+}
+button:active,
+button:focus,
+button:hover {
+  background-color: slateblue;
+  color: white;
+}
+
+#employeeTable {
+  width: 100%;
+  border: 1px solid slateblue;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+#employeeTable thead th {
+  background-color: lightsteelblue;
+  border: 1px solid slateblue;
+  padding: 0.125rem 0.25rem;
+  text-align: left;
+  font-weight: 600;
+}
+#employeeTable tbody td {
+  border: 1px solid slateblue;
+  padding: 0.125rem 0.25rem;
+  text-align: left;
+}
+#employeeTable tbody tr:nth-child(even) td {
+  background-color: gainsboro;
+}
+#employeeTable td.colEmplId,
+#employeeTable td.colSalary {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+#employeeTable td.colDelete {
+  text-align: center;
+}
+
+#monthlyTotalReport {
+  font-weight: 500;
+  text-align: right;
+  margin: 1rem 0;
+  color: darkslateblue;
+}
+#monthlyTotal {
+  padding: 0.125rem 0.25rem;
+  background-color: lightsteelblue;
+  color: black;
+  font-variant-numeric: tabular-nums;
+}
+#monthlyTotal.warning {
+  background-color: lightcoral;
+}

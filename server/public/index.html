@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Salary Calculator</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="vendors/jquery-3.4.1.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Salary Calculator</h1>
+  </header>
+  <main>
+    <section id="addEmployeeForm">
+      <h2>Add Employee</h2>
+      <div id="inputFields">
+        <div class="inputField">
+          <label for="firstName">First name</label>
+          <input type="text" name="firstName" id="firstName" placeholder="First Name">
+        </div>
+        <div class="inputField">
+          <label for="lastName">Last name</label>
+          <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+        </div>
+        <div class="inputField">
+          <label for="emplId">ID</label>
+          <input type="text" name="emplId" id="emplId" placeholder="Employee ID" inputmode="numeric">
+        </div>
+        <div class="inputField">
+          <label for="emplTitle">Title</label>
+          <input type="text" name="emplTitle" id="emplTitle" placeholder="Job Title">
+        </div>
+        <div class="inputField">
+          <label for="salary">Salary</label>
+          <input type="text" name="salary" id="salary" placeholder="Annual Salary" inputmode="numeric">
+        </div>
+      </div>
+      <button id="submitEmployee">Submit</button>
+    </section>
+    <section id="employeeList">
+      <h2>Employees</h2>
+      <table id="employeeTable">
+        <thead>
+          <tr>
+            <th class="colFirstName">First Name</th>
+            <th class="colLastName">Last Name</th>
+            <th class="colEmplId">ID</th>
+            <th class="colEmplTitle">Title</th>
+            <th class="colSalary">Salary</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="colFirstName">filler</td>
+            <td class="colLastName">filler</td>
+            <td class="colEmplId">filler</td>
+            <td class="colEmplTitle">filler</td>
+            <td class="colSalary">filler</td>
+            <td><button class="deleteRow">Delete</button></td>
+          </tr>
+          <tr>
+            <td class="colFirstName">filler</td>
+            <td class="colLastName">filler</td>
+            <td class="colEmplId">filler</td>
+            <td class="colEmplTitle">filler</td>
+            <td class="colSalary">filler</td>
+            <td><button class="deleteRow">Delete</button></td>
+          </tr>
+          <tr>
+            <td class="colFirstName">filler</td>
+            <td class="colLastName">filler</td>
+            <td class="colEmplId">filler</td>
+            <td class="colEmplTitle">filler</td>
+            <td class="colSalary">filler</td>
+            <td><button class="deleteRow">Delete</button></td>
+          </tr>
+          <tr>
+            <td class="colFirstName">filler</td>
+            <td class="colLastName">filler</td>
+            <td class="colEmplId">filler</td>
+            <td class="colEmplTitle">filler</td>
+            <td class="colSalary">filler</td>
+            <td><button class="deleteRow">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <h3 id="monthlyTotalReport">Total Monthly: <span id="monthlyTotal">?</span></h3>
+    </section>
+  </main>
+</body>
+
+</html>
